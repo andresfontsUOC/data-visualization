@@ -4,12 +4,10 @@ output: html_document
 date: "2023-04-24"
 ---
 
-# Something here
-Description
-
 ```{r cars}
 library(flowmapblue)
 ```
+
 
 ```{r pressure, echo=FALSE}
 locations <- read.csv('locations.csv')
@@ -21,8 +19,3 @@ flowmapblue(locations, flows, mapboxAccessToken, clustering = TRUE, darkMode = T
 
 ```
 
-
-
-https://www.paulamoraga.com/blog/2020/07/11/2020-07-11-mobility/
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
