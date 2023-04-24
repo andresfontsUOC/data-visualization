@@ -1,3 +1,5 @@
-﻿Survived,Female,Male,total
-No,81,468,549
-Yes,233,109,342
+﻿Survived,Sex,N
+Yes,Female,233
+No,Female,81
+Yes,Male,109
+No,Male,468
