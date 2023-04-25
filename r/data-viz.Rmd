@@ -19,3 +19,29 @@ flowmapblue(locations, flows, mapboxAccessToken, clustering = TRUE, darkMode = T
 
 ```
 
+``` {r}
+df_spain <- read.csv("spain_prov_tasa_paro.csv")
+
+data_long <- gather(df_spain, sex, tasa_paro, mujer:hombre, factor_key=TRUE)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
