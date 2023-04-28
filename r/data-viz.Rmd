@@ -19,11 +19,51 @@ flowmapblue(locations, flows, mapboxAccessToken, clustering = TRUE, darkMode = T
 
 ```
 
-``` {r}
+``` {r, include=TRUE, fig.width = 6,fig.height = 5}
 df_spain <- read.csv("spain_prov_tasa_paro.csv")
 
 data_long <- gather(df_spain, sex, tasa_paro, mujer:hombre, factor_key=TRUE)
+
+plot <- ggplot(data_long, aes(x=sex, y=tasa_paro, fill=sex)) +
+  geom_col(position='dodge') +
+  theme_bw()+
+  theme(axis.title.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank(),
+        legend.title=element_blank(),
+        strip.text.x=element_text(margin = margin(1,0,1,0, "mm"), size=6)) +
+  coord_flip()+
+  facet_geo(~ name, grid = "spain_prov_grid2") +
+  labs(title = "Tasa de Paro por Comunidad Autónoma",
+    subtitle = "Comparativa respecto al sexo. Cuarto trimestre 2022",
+    caption = "Fuente: INE https://www.ine.es/dynInfo/Infografia/Territoriales/capitulo.html#!tabla",
+    x="", y="")
+
+ggsave(file="tile_grid_map.svg", plot=plot, width=10, height=8)
 ```
+
+ggplot( aes(candidate, pct_votes, fill = candidate)) +
+  geom_col() +
+  geom_text(aes(label=round(pct_votes*100,1)),angle=270,
+            #position =  position_dodge(1),
+    vjust = -0.2,
+    size=1.4
+ )+
+  scale_fill_manual(values = c("#4e79a7", "#e15759")) +
+  ylim(0,1.2)+
+  facet_geo(~ name_indo, grid = indo_grid) + # this is where we use geofacet package
+  theme_bw()+
+  # some adjustments to make it more pleasant in the eye
+  theme(axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    strip.text.x = element_text(size = 4),
+    legend.position = "top"
+    )+
+  labs(fill = "Candidate")+
+  coord_flip()
 
 
 

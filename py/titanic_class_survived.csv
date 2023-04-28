@@ -1,7 +1,7 @@
 ﻿Class,Survived,N,perc
-First Class,Yes,136,0.630
-First Class,No,80,0.370
-Second Class,Yes,87,0.473
-Second Class,No,97,0.527
-Third Class,Yes,119,0.240
-Third Class,No,373,0.760
+First Class,Yes,200,0.619195046
+First Class,No,123,0.380804954
+Second Class,Yes,119,0.429602888
+Second Class,No,158,0.570397112
+Third Class,Yes,181,0.25528914
+Third Class,No,528,0.74471086
