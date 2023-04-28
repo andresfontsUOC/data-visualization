@@ -1798,7 +1798,7 @@
 <text x='679.20' y='299.37' style='font-size: 8.80px; font-family: "Arial";' textLength='22.00px' lengthAdjust='spacingAndGlyphs'>mujer</text>
 <text x='679.20' y='316.65' style='font-size: 8.80px; font-family: "Arial";' textLength='29.84px' lengthAdjust='spacingAndGlyphs'>hombre</text>
 <text x='21.15' y='31.05' style='font-size: 11.00px; font-family: "Arial";' textLength='258.11px' lengthAdjust='spacingAndGlyphs'>Comparativa respecto al sexo. Cuarto trimestre 2022</text>
-<text x='21.15' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='234.66px' lengthAdjust='spacingAndGlyphs'>Tasa de Paro por Comunidad Autónoma</text>
-<text x='640.00' y='568.67' text-anchor='end' style='font-size: 8.80px; font-family: "Arial";' textLength='218.94px' lengthAdjust='spacingAndGlyphs'>Fuente: INE https://www.ine.es/jaxiT3/Tabla.htm?t=3996</text>
+<text x='21.15' y='14.93' style='font-size: 13.20px; font-family: "Arial";' textLength='223.66px' lengthAdjust='spacingAndGlyphs'>Tasa de Paro en España por provincia</text>
+<text x='640.00' y='568.67' text-anchor='end' style='font-size: 8.80px; font-family: "Arial";' textLength='399.02px' lengthAdjust='spacingAndGlyphs'>Cada división corresponde a una tasa de 5%. Fuente: INE https://www.ine.es/jaxiT3/Tabla.htm?t=3996</text>
 </g>
 </svg>

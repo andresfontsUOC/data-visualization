@@ -36,9 +36,9 @@ plot <- ggplot(data_long, aes(x=sex, y=tasa_paro, fill=sex)) +
         strip.text.x=element_text(margin = margin(1,0,1,0, "mm"), size=6)) +
   coord_flip()+
   facet_geo(~ name, grid = "spain_prov_grid2") +
-  labs(title = "Tasa de Paro por Comunidad Autónoma",
+  labs(title = "Tasa de Paro en España por provincia",
     subtitle = "Comparativa respecto al sexo. Cuarto trimestre 2022",
-    caption = "Fuente: INE https://www.ine.es/dynInfo/Infografia/Territoriales/capitulo.html#!tabla",
+    caption = "Cada división corresponde a una tasa de 5%. Fuente: INE https://www.ine.es/jaxiT3/Tabla.htm?t=3996",
     x="", y="")
 
 ggsave(file="tile_grid_map.svg", plot=plot, width=10, height=8)

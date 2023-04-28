@@ -130,12 +130,46 @@ Identifico los siguientes puntos fuertes de las visualizaciones <i>Flow Map</i>:
 <h2>Tile Grid Map</h2>
 <h3>Descripción y aplicación</h3>
 <p>
-	Explicación
+	Un <i>Tile Grid Map</i> o "mapa de mosaicos" es una herramienta de visualización de datos en que representamos un mapa segmentado en regiones
+	de igual tamaño o forma. Este tipo de gráfico permite realizar comparaciones entre regiones de una zona geográfica sin vernos influenciados por
+	el área o la forma de cada región.
+</p>
+<p>
+	En cada tesela (<i>tile</i>) del mapa podemos representar gráficamente los datos asociados a esa región. Esto puede hacerse coloreando con diferentes
+	tonos o colores las regiones, o añadiendo un gráfico sencillo (diagrama de barras, por ejemplo) para presentar los datos de manera visual y 
+	con contexto geográfico.
+</p>
+<p>
+	El principal punto fuerte de este tipo de visualizaciones es que dispone las regiones <strong>iguales entre sí</strong>.
+	Veamos el siguiente ejemplo:
+	<figure>
+		<img src="images/usa_colored_states.jpg" alt="Mapa EEUU" style="width:40%">
+		<img src="images/usa_tile_map.jpg" alt="Tile Mapa EEUU" style="width:40%">
+		<figcaption>Comparativa entre un mapa coloreado (<i>cholorpleth map</i>) y un mapa de mosaicos. Fuente: ForumOne <a href="https://www.forumone.com/insights/blog/good-data-visualization-practice-tile-grid-maps-0/">https://www.forumone.com/insights/blog/good-data-visualization-practice-tile-grid-maps-0/</a>
+		</figcaption>
+	</figure>
+	
+	Obsevamos que en el primer gráfico los estados de EEUU más extensos en área adquieren una relevancia mayor a nivel visual.
+	En cambio vemos en el <i>Tile Map</i> una representación más adecuada a la información que se quiere transmitir. Los estados de la costa
+	este de los EEUU quedan mejor representados, puesto que al ser mucho más pequeños que los estados al oeste no se apreciaban en la
+	representación de tipo <i>cholorpleth</i>.
+</p>
+<p>
+	Encuentro que el principal inconveniente de los <i>Tile Maps</i> es la necesidad de recurrir a librerías muy específicas que dispongan
+	en formato tesela o mosaico la zona geográfica que queremos representar. En caso de no disponer de ella deberemos diseñarla nosotros mismos.
+	Existen eso sí algunas herramientas como <a href="https://hafen.github.io/grid-designer/">Geo Grid Designer</a> para crear o editar el mapa de teselas
+	de una región.
+</p>
+<p>
+	En cuanto al tipo de datos y su formato, esta herramienta se presenta poco útil para presentar grandes cantidades de datos. Pienso que como mucho podemos representar 2 ó 3
+	datos cualitativos por región representada. Podemos presentar tados categóricos (las regiones geográficas) y datos cuantitativos (los valores a comprar
+	entre regiones).
 </p>
 
 <h3>Tasa de paro en España</h3>
 <p>
-	Explicación  <a href="r/tile_grid_map.html">Tile Grid Map</a>
+	He preparado un <i>Tile Map</i> utilizando el mapa de España y la tasa de paro por provincia, comparando el datos por sexo.
+	La vsisualización puede consultarse en el siguiente enlace: <a href="r/tile_grid_map.html">Tasa de paro en España por provincia</a>.
 </p>
 
 
@@ -159,6 +193,8 @@ A continuación muestro la documentación consultada, así como los ejemplos en 
 	<li><i>Tile Maps</i> [en línea] [consulta: 25 de abril de 2023]. Disponible en: <a href="https://cran.r-project.org/web/packages/tilemaps/vignettes/tilemaps.html">https://cran.r-project.org/web/packages/tilemaps/vignettes/tilemaps.html</li>
 	</li>
 	<li><i>Good Data Visualization Practice: Tile Grid Maps | Forum One</i> [en línea] [consulta: 28 de abril de 2023]. Disponible en: <a href="https://www.forumone.com/insights/blog/good-data-visualization-practice-tile-grid-maps-0/">https://www.forumone.com/insights/blog/good-data-visualization-practice-tile-grid-maps-0/</a>
+	</li>
+	<li><i>Tilemaps in R – digital.ebp.ch</i> [en línea] [consulta: 28 de abril de 2023]. Disponible en: <a href="https://digital.ebp.ch/2021/03/02/tilemaps-in-r/">https://digital.ebp.ch/2021/03/02/tilemaps-in-r/</a>
 	</li>
 </ul>
 
